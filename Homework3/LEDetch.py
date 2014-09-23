@@ -1,4 +1,4 @@
-import time
+#import time
 import Image
 import ImageDraw
 import Adafruit_BBIO.GPIO as GPIO
@@ -18,11 +18,11 @@ GPIO.setup("P9_27", GPIO.IN) # Right
 GPIO.setup("P9_30", GPIO.IN) # Clear
 
 # Setting up event detection
-GPIO.add_event_detect("P9_21", GPIO.RISING)
-GPIO.add_event_detect("P9_23", GPIO.RISING)
-GPIO.add_event_detect("P9_24", GPIO.RISING)
-GPIO.add_event_detect("P9_27", GPIO.RISING)
-GPIO.add_event_detect("P9_30", GPIO.RISING)
+GPIO.add_event_detect("P9_21", GPIO.FALLING)
+GPIO.add_event_detect("P9_23", GPIO.FALLING)
+GPIO.add_event_detect("P9_24", GPIO.FALLING)
+GPIO.add_event_detect("P9_27", GPIO.FALLING)
+GPIO.add_event_detect("P9_30", GPIO.FALLING)
 
 # Initializing etch-a-sketch variables
 rowSize = 8
@@ -32,14 +32,17 @@ curr_row = 4
 curr_col = 4
 first_stroke = 0 # flag to detect first sketch
 
+#display.begin()
+
 # Clearing the LED matrix to begin:
 display.clear()
 
 while True:
 	# Updates the LED display:
-	display.write_display()
+	#display.write_display()
 
 	if GPIO.event_detected("P9_21"):
+	#if GPIO.input("P9_21"):
 		if curr_row <= 0:
 			curr_row = 0
 		else:
@@ -47,13 +50,15 @@ while True:
 		first_stroke = 1
 
 	if GPIO.event_detected("P9_23"):
+	#if GPIO.input("P9_23"):
 		if curr_row >= 7:
 			curr_row = 7
-
+		else:
 			curr_row = curr_row + 1
 		first_stroke = 1
 
 	if GPIO.event_detected("P9_24"):
+	#if GPIO.input("P9_24"):
 		if curr_col <= 0:
 			curr_col = 0
 		else:
