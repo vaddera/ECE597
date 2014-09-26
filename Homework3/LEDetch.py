@@ -77,7 +77,13 @@ while True:
 		first_stroke = 0
 	
 	if first_stroke != 0:
-		display.set_pixel(curr_row, curr_col, 1)
+		disp_row = curr_row
+		disp_row = disp_row + 1
+
+		if disp_row >= 8:
+			disp_row = 0
+
+		display.set_pixel(disp_row, curr_col, 1)
 
 	display.write_display()
 
