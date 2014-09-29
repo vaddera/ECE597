@@ -24,8 +24,8 @@
 #define USR1 (1<<22)
 #define USR2 (1<<23)
 #define USR3 (1<<24)
-#define GPIO_03  (1<<3)
-#define GPIO_49 (1<<17)
+#define GPIO_03  (1<<3) // P9_21
+#define GPIO_49 (1<<17) // p9_23
 #define GPIO_07  (1<<7)
 #define GPIO_60  (1<<28)
 #endif
