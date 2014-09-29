@@ -25,10 +25,10 @@
 		 0x03C 0x24  /* P8_15 = GPIO2_13 = EQEP2_strobe, MODE4 */
 		 0x030 0x34  /* P8_12 = GPIO2_10 = EQEP2A_in,    MODE4 */
 		 0x034 0x34  /* P8_11 = GPIO2_11 = EQEP2B_in,    MODE4 */
-		 0x0b8 0x23  /* P8_39 = GPIO2_12 = EQEP2_index,  MODE3 */ // ADDED
-		 0x0bc 0x23  /* P8_40 = GPIO2_13 = EQEP2_strobe, MODE3 */ // ADDED
-		 0x0b0 0x33  /* P8_41 = GPIO2_10 = EQEP2A_in,    MODE3 */ // ADDED
-		 0x0b4 0x33  /* P8_42 = GPIO2_11 = EQEP2B_in,    MODE3 */ // ADDED
+		 //0x0b8 0x23  /* P8_39 = GPIO2_12 = EQEP2_index,  MODE3 */ // ADDED
+		 //0x0bc 0x23  /* P8_40 = GPIO2_13 = EQEP2_strobe, MODE3 */ // ADDED
+		 //0x0b0 0x33  /* P8_41 = GPIO2_10 = EQEP2A_in,    MODE3 */ // ADDED
+		 //0x0b4 0x33  /* P8_42 = GPIO2_11 = EQEP2B_in,    MODE3 */ // ADDED
 		 /* From: https://groups.google.com/forum/#!searchin/beagleboard/eQep/beagleboard/Orp3tFcNgCc/mYacP_GkCQQJ */
                >;
            };
