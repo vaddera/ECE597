@@ -50,8 +50,8 @@ while True:
 	fs1 = open('/sys/devices/ocp.3/48302000.epwmss/48302180.eqep/position','r')
 	fs2 = open('/sys/devices/ocp.3/48304000.epwmss/48304180.eqep/position','r')
 
-	curr_read1 = int(fs1.read())
-	curr_read2 = int(fs2.read())
+	curr_read1 = int(fs1.read())/4
+	curr_read2 = int(fs2.read())/4
 
 	if GPIO.event_detected("P9_21") or curr_read1 < prev_read1:
 	#if GPIO.input("P9_21"):
