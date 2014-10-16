@@ -82,7 +82,7 @@ app.arm : app.o
 	$(CC) $(CFLAGS) $(LINKER_FLAGS) $< -o $@
 
 
-#@echo; echo $@ successfully created; echo
+	@echo; echo $@ successfully created; echo
 
 
 # ---------------------------------------------------
