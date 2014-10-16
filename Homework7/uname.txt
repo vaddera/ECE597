@@ -1,0 +1,3 @@
+root@beaglebone:/lib/modules/3.8.13-alex1# uname -a
+Linux beaglebone 3.8.13-alex1 #2 SMP Thu Oct 16 13:53:36 EDT 2014 armv7l GNU/Linux
+
