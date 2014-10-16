@@ -1,0 +1,5 @@
+Boot time before removing services:
+Startup finished in 2565ms (kernel) + 11909ms (userspace) = 14475ms
+
+Boot time after removing services:
+Startup finished in 2536ms (kernel) + 9814ms (userspace) = 12350ms

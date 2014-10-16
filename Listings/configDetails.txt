@@ -1,0 +1,2 @@
+
+location of "start_kernel": /KERNEL/arch/alpha/boot/main.c @ void start_kernel(void)
