@@ -1,0 +1,12 @@
+root@beaglebone:/busybox# du -h busybox
+680K	busybox
+
+root@beaglebone:/busybox# du -h busybox
+140K	busybox
+
+root@beaglebone:/busybox# du -h busybox
+24K	busybox
+
+root@beaglebone:/busybox# du -h busybox
+40K	busybox
+
