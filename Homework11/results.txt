@@ -10,3 +10,8 @@ root@beaglebone:/busybox# du -h busybox
 root@beaglebone:/busybox# du -h busybox
 40K	busybox
 
+root@beaglebone:/busybox# du -h busybox
+372K	busybox
+
+root@beaglebone:/busybox# du -h busybox
+24K	busybox
