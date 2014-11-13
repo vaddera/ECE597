@@ -16,12 +16,14 @@ while True:
 	#OUTB = ADC.read_raw("P9_39")
 
 	# Another option:
-	OUTA = ADC.read("P9_37") * Volt
-	OUTB = ADC.read("P9_39") * Volt
+	#OUTA = round((ADC.read("P9_36") * Volt), 3)
+	#OUTB = round((ADC.read("P9_33") * Volt), 3)
+	OUTA = ADC.read("P9_36")
+	OUTB = ADC.read("P9_33")
 	
 	#OUTA = "%.3f" % OUTA
 	#OUTB = "%.3f" % OUTB
-
+	'''
 	if OUTA != prevA:
 		print('OUTA:')
 		print(OUTA)
@@ -29,11 +31,12 @@ while True:
 	if OUTB != prevB:
 		print('OUTB:')
 		print(OUTB)
+	'''
 
-	prevA = OUTA
-	prevB = OUTB
+	print 'OUTA: ' + str(OUTA)
+	#print 'OUTB: ' + str(OUTB)
 
-	T.sleep(5)
+	T.sleep(0.5)
 
 '''
 print('Printing value of OUTA:')
